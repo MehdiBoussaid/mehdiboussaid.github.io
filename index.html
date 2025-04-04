@@ -6,35 +6,46 @@
     <title>Mehdi Boussaid</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            color: #fff;
-        }
-        .container {
-            text-align: center;
+            font-family: monospace;
+            white-space: pre-wrap; 
+            background-color: black;
+            color: white;
             padding: 20px;
         }
-        .line {
-            margin: 5px 0;
-        }
     </style>
+   
 </head>
 <body>
-    <div class="container">
-        <h1>
-            <span class="line">Mehdi Boussaid,</span>
-            <span class="line">fullstack dev,</span>
-            <span class="line">Paris, Fr</span>
-        </h1>
-    </div>
+    Mehdi Boussaid,
+    développeur full stack,
+    entre autres,
+    Paris.
 </body>
 </html>
+
+
+
+<!-- favicon  -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+        const canvas = document.createElement('canvas');
+        canvas.width = 32;
+        canvas.height = 32;
+        const ctx = canvas.getContext('2d');
+
+     
+        ctx.fillStyle = '#4169E1';
+        ctx.fillRect(0, 0, 32, 32);
+
+       
+        const faviconURL = canvas.toDataURL('image/png');
+
+       
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = faviconURL;
+        document.head.appendChild(link);
+    });
+</script>
+<!-- favicon  -->
