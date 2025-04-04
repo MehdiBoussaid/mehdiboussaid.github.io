@@ -1,51 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mehdi Boussaid</title>
-    <style>
-        body {
-            font-family: monospace;
-            white-space: pre-wrap; 
-            background-color: black;
-            color: white;
-            padding: 20px;
-        }
-    </style>
-   
-</head>
-<body>
-    Mehdi Boussaid,
-    développeur full stack,
-    entre autres,
-    Paris.
-</body>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    Mehdi Boussaid,<br />
+    développeur full stack, etc.<BR />
+    Paris, Fr.
+    <br />
+    GitHub :
+    <a href="https://github.com/MehdiBoussaid" target="_blank"
+      >https://github.com/MehdiBoussaid</a
+    >
+    Malt :
+    <a href="https://github.com/MehdiBoussaid" target="_blank"
+      >https://github.com/MehdiBoussaid</a
+    >
+  </body>
 </html>
 
 
-
-<!-- favicon  -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      
-        const canvas = document.createElement('canvas');
-        canvas.width = 32;
-        canvas.height = 32;
-        const ctx = canvas.getContext('2d');
-
-     
-        ctx.fillStyle = 'grey';
-        ctx.fillRect(0, 0, 32, 32);
-
-       
-        const faviconURL = canvas.toDataURL('image/png');
-
-       
-        const link = document.createElement('link');
-        link.rel = 'icon';
-        link.href = faviconURL;
-        document.head.appendChild(link);
-    });
-</script>
-<!-- favicon  -->
